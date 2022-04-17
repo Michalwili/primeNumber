@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class Main {
-    private static boolean czyPierwsza(int v) {
+    private static boolean isPrime(int v) {
         if (v == 1) {
             return false;
         }
@@ -21,8 +21,8 @@ public class Main {
         int tests = sc.nextInt();
         for (int i = 0; i < tests; i++) {
             number = sc.nextInt();
-            String wynik = czyPierwsza(number) == true ? "TAK" : "NIE";
-            System.out.println(wynik);
+            String result = isPrime(number) == true ? "YES" : "NO";
+            System.out.println(result);
 
         }
     }
